@@ -4,7 +4,7 @@ Print these patterns using loops:
 
 ```text
 ----------------------------------------------
-       S.No.     |  Pattern Completed        |
+|      S.No.     |  Pattern Completed        |
 ----------------------------------------------
 |        1       |       Square              |
 ----------------------------------------------
