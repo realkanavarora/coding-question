@@ -126,8 +126,19 @@ void pattern8(){
  printf("----------------------------------------\n");
 }
 
+void pattern26(){
+ printf("--- (Counting) RIGHT ANGLE TRIANGLE -------\n");
+ for(int i=1;i<=6;i++){
+    for(int j=1;j<=6-i+1;j++){
+        printf("%d ",i);
+    }
+    printf("\n");
+ }
+ printf("----------------------------------------\n");
+}
+
 int main(){
-  pattern8();
+  pattern26();
   return 0;
 
 }
