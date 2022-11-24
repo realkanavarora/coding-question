@@ -52,8 +52,8 @@ void pattern4(){
 }
 
 void pattern5(){
- printf("--- HALF DIAMOND | VERTICAL Right Face -------\n");
- for(int i=1;i<=2*10;i++){
+ printf("--- HALF DIAMOND | VERTICAL Right Face -------\n\n");
+ for(int i=1;i<=2*10-1;i++){
     if(i<=5){
     for(int j=1;j<=i;j++){
         printf("* ");
@@ -70,9 +70,37 @@ void pattern5(){
 }
 
 
+void pattern6(){
+ printf("--- HALF DIAMOND | VERTICAL Left Face -------\n\n");
+ for(int i=1;i<=2*10-1;i++){
+// For adding spaces
+    if(i<5){
+    for(int j=5-i;j>=1;j--){
+        printf(" ");
+    }}
+    else{
+      for(int k=i-5;k>=1;k--){
+        printf(" ");
+    }  
+    }
+// For printing * (MAKING Pattern)
+    if(i<=5){
+    for(int j=1;j<=i;j++){
+        printf("*");
+    }}
+    else{
+      for(int k=2*5-i;k>=1;k--){
+        printf("*");
+    }  
+    }
+    printf("\n");
+ }
+ printf("----------------------------------------\n");
+
+}
 
 int main(){
-  pattern5();
+  pattern6();
   return 0;
 
 }
