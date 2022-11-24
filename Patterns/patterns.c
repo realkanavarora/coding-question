@@ -99,8 +99,35 @@ void pattern6(){
 
 }
 
+
+void pattern7(){
+ printf("--- (0 1 pattern) RIGHT ANGLE TRIANGLE -------\n");
+ int k=1;
+ for(int i=1;i<=5;i++){
+    for(int j=1;j<=i;j++){
+        printf("%d ",k);
+        k=!k;
+    }
+    printf("\n");
+ }
+ printf("----------------------------------------\n");
+}
+
+void pattern8(){
+ printf("--- (Counting) RIGHT ANGLE TRIANGLE -------\n");
+ int k=1;
+ for(int i=1;i<=5;i++){
+    for(int j=1;j<=i;j++){
+        printf("%d\t",k);
+        k++;
+    }
+    printf("\n");
+ }
+ printf("----------------------------------------\n");
+}
+
 int main(){
-  pattern6();
+  pattern8();
   return 0;
 
 }
